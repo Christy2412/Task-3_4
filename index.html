@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <img src="smartserv.logo.jpg" alt="logo" class="logo">
+            <form id="loginForm" onsubmit="validateForm(); return false;">
+                <label for="username"></label>
+                <input class="font" type="email" id="username" placeholder="Username" name="username" required>
+                <p class="error" id="usernameError"></p>
+    
+                <label for="password"></label>
+                <input class="font" type="password" id="password" placeholder="Password" name="password" required>
+                <p class="error" id="passwordError"></p>
+    
+                <button type="submit" class="font">Login</button>
+            </form>
+            <a href="#" onclick="forgotPassword()">Forgot your password?</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
